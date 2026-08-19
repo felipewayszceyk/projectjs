@@ -1,11 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Felipe Abroad</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
-</body>
-</html>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="logo">Felipe Abroad</a>
+      
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#cities">Cities</a></li>
+          <li><a href="#checklist">Checklist</a></li>
+          <li><a href="#quiz">Quiz</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <p class="eyebrow">Life in Europe starts here</p>
+        <h1>Thinking about moving to Ireland?</h1>
+        <p class="hero-lead">
+        "Second time moving to Ireland. First as a student, now with a partner visa 
+        and I'm putting everything I've learned here. Stick around, it might save you a few headaches."
+        </p>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>Why people move to Ireland</h2>
+        <div class="about-grid">
+          <article class="about-card">
+            <span class="index">01</span>
+            <h3>A gateway to Europe</h3>
+            <p>English-speaking, EU-adjacent and just a short flight from most of mainland Europe, Ireland is
+              a popular first stop for people relocating from outside the continent.</p>
+          </article>
+          <article class="about-card">
+            <span class="index">02</span>
+            <h3>A strong job market</h3>
+            <p>Dublin in particular hosts European headquarters for major tech, pharma and finance companies,
+              which means a steady stream of visa-sponsored roles.</p>
+          </article>
+          <article class="about-card">
+            <span class="index">03</span>
+            <h3>Students and families welcome</h3>
+            <p>From graduate visas to a well-regarded education system, Ireland attracts students and families
+              looking for a fresh start.</p>
+          </article>
+          <article class="about-card">
+            <span class="index">04</span>
+            <h3>About the weather</h3>
+            <p>Mild all year round, rarely extreme — but pack a proper raincoat. You'll thank us later.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="cities" class="section cities">
+      <div class="container">
+        <h2>Explore where to live</h2>
+        <p class="section-lead">Six Irish cities and towns, compared side by side.</p>
+
+        <div class="filter-bar">
+          <button class="filter-btn active" type="button">All</button>
+          <button class="filter-btn" type="button">Career &amp; Nightlife</button>
+          <button class="filter-btn" type="button">Student-Friendly</button>
+          <button class="filter-btn" type="button">Family-Friendly</button>
+          <button class="filter-btn" type="button">Budget-Friendly</button>
+        </div>
+
+        <div class="city-grid">
+          <article class="city-card">
+            <div class="city-card__banner" style="background:#1c3829">DUBLIN</div>
+            <div class="city-card__body">
+              <h3>Dublin</h3>
+              <p class="city-card__meta">Leinster (East Coast)</p>
+              <p>The capital and the country's economic engine. Home to European HQs for tech and pharma
+                companies, a huge student population, and the best transport links — but also the highest
+                rents in the country.</p>
+              <div class="city-card__stats">
+                <span><strong>Population</strong> — 1.4M (greater area)</span>
+                <span><strong>Avg. rent</strong> — €1,900/month (1-bed, city centre)</span>
+              </div>
+              <div class="city-card__tags">
+                <span class="tag">Career &amp; Nightlife</span>
+                <span class="tag">Student-Friendly</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="city-card">
+            <div class="city-card__banner" style="background:#14181f">CORK</div>
+            <div class="city-card__body">
+              <h3>Cork</h3>
+              <p class="city-card__meta">Munster (South)</p>
+              <p>Ireland's second city: a walkable, food-loving town with a growing tech scene, easy access
+                to the coast, and a noticeably calmer pace of life than Dublin.</p>
+              <div class="city-card__stats">
+                <span><strong>Population</strong> — 220k</span>
+                <span><strong>Avg. rent</strong> — €1,500/month (1-bed, city centre)</span>
+              </div>
+              <div class="city-card__tags">
+                <span class="tag">Family-Friendly</span>
+                <span class="tag">Budget-Friendly</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="city-card">
+            <div class="city-card__banner" style="background:#ab4a2b">GALWAY</div>
+            <div class="city-card__body">
+              <h3>Galway</h3>
+              <p class="city-card__meta">Connacht (West Coast)</p>
+              <p>A compact, artsy university town on the Atlantic coast, known for festivals, live music and
+                being minutes away from some of the country's best scenery.</p>
+              <div class="city-card__stats">
+                <span><strong>Population</strong> — 80k</span>
+                <span><strong>Avg. rent</strong> — €1,400/month (1-bed, city centre)</span>
+              </div>
+              <div class="city-card__tags">
+                <span class="tag">Student-Friendly</span>
+                <span class="tag">Family-Friendly</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="city-card">
+            <div class="city-card__banner" style="background:#3a4a4a">LIMERICK</div>
+            <div class="city-card__body">
+              <h3>Limerick</h3>
+              <p class="city-card__meta">Munster (Mid-West)</p>
+              <p>A riverside city with a medieval core, one of the more affordable options among Ireland's
+                cities, and a solid base for manufacturing and tech jobs.</p>
+              <div class="city-card__stats">
+                <span><strong>Population</strong> — 95k</span>
+                <span><strong>Avg. rent</strong> — €1,300/month (1-bed, city centre)</span>
+              </div>
+              <div class="city-card__tags">
+                <span class="tag">Budget-Friendly</span>
+                <span class="tag">Family-Friendly</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="city-card">
+            <div class="city-card__banner" style="background:#8a6d3a">WATERFORD</div>
+            <div class="city-card__body">
+              <h3>Waterford</h3>
+              <p class="city-card__meta">Munster (South-East)</p>
+              <p>Ireland's oldest city, famous for crystal and a relaxed South-East coast lifestyle. Rents
+                here are among the lowest of any Irish city.</p>
+              <div class="city-card__stats">
+                <span><strong>Population</strong> — 60k</span>
+                <span><strong>Avg. rent</strong> — €1,150/month (1-bed, city centre)</span>
+              </div>
+              <div class="city-card__tags">
+                <span class="tag">Budget-Friendly</span>
+                <span class="tag">Family-Friendly</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="city-card">
+            <div class="city-card__banner" style="background:#4a3a42">KILKENNY</div>
+            <div class="city-card__body">
+              <h3>Kilkenny</h3>
+              <p class="city-card__meta">Leinster (South-East)</p>
+              <p>A postcard-medieval town, less than 1.5 hours from Dublin, popular with families who want
+                small-town life without being far from the capital.</p>
+              <div class="city-card__stats">
+                <span><strong>Population</strong> — 27k</span>
+                <span><strong>Avg. rent</strong> — €1,200/month (town centre)</span>
+              </div>
+              <div class="city-card__tags">
+                <span class="tag">Family-Friendly</span>
+                <span class="tag">Budget-Friendly</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
