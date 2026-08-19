@@ -292,10 +292,8 @@ a { color: inherit; }
 .site-footer {
   background: var(--ink);
   color: var(--paper);
+  text-align: center;
   padding: 2.25rem 0;
 }
-.footer-inner { display: flex; flex-direction: column; gap: 0.2rem; }
-.site-footer p { color: rgba(245, 242, 234, 0.9); margin: 0; font-size: 0.9rem; }
-.footer-note { font-size: 0.78rem; color: rgba(245, 242, 234, 0.55) !important; }
 
 
